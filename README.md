@@ -22,3 +22,9 @@ Normal cell and reduction cells are stacked to make a network which is trained o
 In the figure above, cell with stride 1 is normal cell and the one with stride 2 is reduction cell. In this implementation N = 2, so there are 8 layers in the network, 2 reduction cells and 6 normal cells.
 
 As given in the paper, 1x1 convolutional operations are inserted to make the inputs compatible for further operations in the cells. 
+
+# Training 
+Network is trained with hyperparameters used by authors such as learning rate, optimizer and scheduler.
+
+# Acccuracy
+ Due to less computation power available network is trained for 8 epochs only after which it achieves 78% accuracy on test data
